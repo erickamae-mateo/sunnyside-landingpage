@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [sunnyside-landingpage](https://github.com/erickamae-mateo/sunnyside-landingpage)
+- Live Site URL: [Sunnyside](https://erickamae-mateo.github.io/sunnyside-landingpage/)
 
 ## My process
 
@@ -47,14 +47,12 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@erickamae-mateo](https://www.frontendmentor.io/profile/erickamae-mateo)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
- https://www.youtube.com/
+https://www.youtube.com/ 
  https://developer.mozilla.org/en-US/
  https://www.w3schools.com/
  
