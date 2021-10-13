@@ -1,0 +1,112 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
+.feature{
+
+
+  .feature_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    flex-direction: column;
+
+     @include breakpoints-up(medium){
+       flex-direction: row;
+       margin-bottom: -10px;
+      }
+
+      @include breakpoints-up(large){
+       flex-direction: row;
+       margin-bottom: -10px;
+      }
+
+}
+     &_text{
+     
+        order:1;
+        padding: 27px 30px;
+        text-align: center;
+
+         @include breakpoints-up(medium){
+            width: 50%;
+            text-align: left;
+            padding: 0px 70px;
+          }
+
+          @include breakpoints-up(large){
+            width: 50%;
+            text-align: left;
+            padding: 0px 130px;
+        }
+
+      &-title{
+         color: $veryDarkBlue;
+      }
+      &-description{
+        color: $grayishBlue;
+      }
+
+       .softred::after{
+              background-color: $softRed;
+            }
+       &-cta{
+        position: relative;
+        color: $veryDarkBlue;
+
+        &::after {
+              content: "";
+              position: absolute;
+              width: 28%;
+              transform: scaleX(0);
+              height: 7px;
+              border-radius: 50px;
+              bottom: -4px;
+              left: 36%;
+              background-color: $yellow;
+              transform-origin: bottom right;
+              transition: transform 0.25s ease-out;
+
+              @include breakpoints-down(medium){
+                    width: 38%;
+                    bottom: -1px;
+                    left: -2%;
+              }
+               @include breakpoints-up(large){
+                  left: 0;
+              }
+            }
+            &:hover:after {
+              transform: scaleX(1);
+              transform-origin: bottom left;
+            }
+      }
+      
+    }
+
+    &_image{
+
+       @include breakpoints-up(medium){
+          width: 50%;
+          order: 1;
+        }
+
+       img{
+
+        width:100%;
+        min-height: 315px;
+        object-fit: cover;
+
+         @include breakpoints-up(medium){
+          min-height: 450px;
+        }
+
+          @include breakpoints-up(large){
+          min-height: 595px;
+        }
+    }
+     
+  }
+
+}

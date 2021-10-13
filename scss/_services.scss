@@ -1,0 +1,74 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
+.services{
+
+   &_content{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     text-align: center;
+     flex-direction: column;
+
+     @include breakpoints-up(medium){
+      flex-direction: row;
+     }
+}
+   
+   .graphics{
+       background-image: url(../images/desktop/image-graphic-design.jpg);
+       h3{
+          color:$darkDesaturatedCyan;
+       }
+       p{
+          color: $darkModerateCyan;
+       }
+   }
+   .photography{
+     background-image: url(../images/desktop/image-photography.jpg); 
+     h3{
+      color: $veryDarkBlue;
+     }
+     p{
+      color: $veryGrayishBlue;
+     }
+   }
+
+   &_image, .graphics, .photography{
+      height: 570px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center ;
+      width: 100%;
+
+       @include breakpoints-up(large){
+          width: 50%;
+          height: 595px;
+       }
+     }
+     &_text{
+         margin-top: 92%;
+         margin-right: 18px;
+         margin-left: 18px;
+
+          @include breakpoints-up(medium){
+          margin-top:80%;
+          padding: 0px 60px;
+       }
+        @include breakpoints-up(large){
+          margin-top:60%;
+          padding: 0px 150px;
+       }
+
+
+       h3{
+         margin-bottom: 40px;
+       }
+       p{
+         font-size: 0.875rem;
+       }
+     }
+
+  }
+

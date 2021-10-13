@@ -1,0 +1,50 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.footer{
+    background-color: #95d6c9;
+    text-align: center;
+    padding: 0 38px;
+
+    a:hover{
+        color: $white;
+    }
+
+    &_logo{
+        padding-top: 63px;
+        margin-bottom: 46px;
+    }
+
+    &_sitemap{
+        margin-bottom: 89px;
+
+        a{
+            color:$darkModerateCyan;
+
+            @include breakpoints-up(medium){
+        
+                a:not(:last-child){
+                    margin-right: 56px;
+                }
+            }
+        }
+        a:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+    &_social{
+        padding-bottom: 78px;
+
+        a{
+            margin-right: 28px;
+            height: 20px;
+
+            svg path{
+                transition: fill 150ms ease-in-out;
+            }
+            &:hover svg path{
+                fill: $white;
+            }
+        }
+    }
+}

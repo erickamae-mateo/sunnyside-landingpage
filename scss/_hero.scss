@@ -1,0 +1,28 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
+.hero{
+
+    position: absolute;
+    top: 12%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+
+    @include breakpoints-up(large){
+    	top: 17%;
+    }
+
+	&_title{
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 11px;
+    margin-bottom: 50px;
+
+     @include breakpoints-up(large){
+    	margin-bottom: 105px;
+    }
+  }
+}
