@@ -1,0 +1,26 @@
+{
+  "name": "sunnyside",
+  "version": "1.0.0",
+  "description": "Sunnyside Landing page challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch scss:assets/css"
+
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SCSS",
+    "JS"
+  ],
+  "author": "Ericka Mae Mateo",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.42.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss-cli": "^9.0.1"
+  }
+}
