@@ -23,10 +23,6 @@ body{
 
 	overflow-x: hidden;
 
-	// @include breakpoints-up(large){
-	// 	font-size: 1.25rem;
-	// }
-
 	&.noscroll{
 		overflow: hidden;
 	}
@@ -45,7 +41,7 @@ h1{
 	color: $white;
 
 	@include breakpoints-up(large){
-		font-size: 2.5rem;
+		font-size: 3.125rem;
 	}
 }
 
@@ -111,7 +107,7 @@ img{
 		justify-content: center;
 	}
 	&-ai-c{
-		align-items: center;
+		align-content: center;
 	}
 }
 
