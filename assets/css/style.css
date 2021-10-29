@@ -490,7 +490,7 @@ button::after, .button::after {
 @media (min-width: 1024px) {
   .testimonial {
     margin-bottom: 140px;
-    padding: 0 140px;
+    padding: 0 100px;
     overflow-x: hidden;
   }
 }
